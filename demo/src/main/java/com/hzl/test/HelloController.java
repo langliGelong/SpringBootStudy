@@ -1,7 +1,7 @@
 package com.hzl.test;
 
 import com.hzl.test.bean.Demo;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
-    @RequestMapping("/")
+    @GetMapping("/")
     public Demo hello() {
         Demo demo = new Demo();
         demo.setId(1);
